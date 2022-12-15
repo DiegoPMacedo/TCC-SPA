@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>SPA</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header>
+        <div class="w3-container w3-teal">
+            <div style="text-align: center">
+                <h1>O mínimo necessário para se ter uma SPA em javascript</h1>
+            </div>
+        </div>
+        <nav id="menu" class="w3-bar w3-card-2 w3-margin-bottom w3-blue-grey">
+            <a href="#inicio" class="w3-bar-item w3-button">Início</a>
+            <a href="#pagina_estatica" class="w3-bar-item w3-button">Página Estática</a>
+            <a href="#pagina_dinamica" class="w3-bar-item w3-button">Página Dinâmica</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- cada div dentro do container corresponde a uma página -->
+        <div id="root" class="w3-container">
+            <div data-pg="inicio">
+                <h1>Bem Vindo!</h1>
+            </div>
+            <div data-pg="loading" style="display: none">
+                <h1>Loading...</h1>
+            </div>
+            <div data-pg="not_found" style="display: none">
+                <h1>Página não encontrada!</h1>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
